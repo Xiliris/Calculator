@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: rgb(97, 119, 127);
+}
+
+.commands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: black;
+  color: white;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+
+div {
+  font-size: 44px;
+  align-self: center;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+.pad {
+  padding: 20px 40px;
+}
+
+.active {
+  background-color: red;
+  align-self: stretch;
+  grid-column: 4 / -1;
+  grid-row: 3 / 6;
+  /* ###### NE BITNO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display {
+  grid-column: 1 / -1;
+  height: 100px;
+  color: white;
+  background-color: rgb(144, 238, 144, 0.25);
+  font-size: 36px;
+  padding: 10px;
+}
+
+.pad {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pad:hover {
+  background-color: white;
+  color: black;
+}
