@@ -1,3 +1,3 @@
 # calculator
-Basic Aplication
-PC Version
+# Basic Aplication
+# PC Version
